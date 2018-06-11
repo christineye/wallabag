@@ -805,6 +805,7 @@ class EntryRestController extends WallabagRestController
             'content' => $request->request->get('content'),
             'language' => $request->request->get('language'),
             'picture' => $request->request->get('preview_picture'),
+            'preview_text' => $request->request->get('preview_text'),
             'publishedAt' => $request->request->get('published_at'),
             'authors' => $request->request->get('authors', ''),
             'origin_url' => $request->request->get('origin_url', ''),

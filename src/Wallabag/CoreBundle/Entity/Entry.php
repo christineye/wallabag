@@ -204,6 +204,16 @@ class Entry
      */
     private $previewPicture;
 
+        /**
+     * @var string
+     *
+     * @ORM\Column(name="preview_text", type="text", nullable=true)
+     *
+     * @Groups({"entries_for_user", "export_all"})
+     */
+    private $previewText;
+
+
     /**
      * @var string
      *
@@ -687,6 +697,31 @@ class Entry
     public function getPreviewPicture()
     {
         return $this->previewPicture;
+    }
+
+
+    /**
+     * Set previewPicture.
+     *
+     * @param string $previewPicture
+     *
+     * @return Entry
+     */
+    public function setPreviewText($previewText)
+    {
+        $this->previewText = $previewText;
+
+        return $this;
+    }
+
+    /**
+     * Get previewPicture.
+     *
+     * @return string
+     */
+    public function getPreviewText()
+    {
+        return $this->previewText;
     }
 
     /**

@@ -9,6 +9,7 @@
             <a href="{{ path('view', { 'id': entry.id }) }}">
                 <span class="preview" style="background-image: url({{ entry.previewPicture }})"></span>
             </a>
+
         </div>
         {% include "@WallabagCore/themes/material/Entry/Card/_content.html.twig" with {'entry': entry, 'withPreview': true} only %}
     </div>

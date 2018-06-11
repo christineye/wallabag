@@ -241,6 +241,10 @@ class ContentProxy
             $entry->setMimetype($content['content_type']);
         }
 
+        if (!empty($content['summary'])) {
+            $entry->setPreviewText($content['summary']);
+        }
+
         try {
             $this->tagger->tag($entry);
         } catch (\Exception $e) {

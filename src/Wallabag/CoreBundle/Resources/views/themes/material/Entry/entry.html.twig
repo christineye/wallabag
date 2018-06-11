@@ -267,7 +267,9 @@
                             </a>
                         </li>
                     {% endif %}
-                </ul>
+                        <li>{{ entry.previewText }}</li>
+
+                    </ul>
                 {% include "@WallabagCore/themes/material/Entry/_tags.html.twig" with {'tags': entry.tags, 'entryId': entry.id, 'withRemove': true} only %}
             </div>
 
