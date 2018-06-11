@@ -1,3 +1,0 @@
-<IfModule mod_alias.c>
-RedirectMatch 301 ^/pocket/$ http://waltzy.byethost11.com/pocket/web
-</IfModule>
