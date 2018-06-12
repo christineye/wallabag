@@ -14,5 +14,12 @@
         {% if withTags is defined %}
             {% include "@WallabagCore/themes/material/Entry/_tags.html.twig" with {'tags': entry.tags | slice(0, 3), 'entryId': entry.id, 'listClass': ' hide-on-med-and-down'} only %}
         {% endif %}
+
+
+                <div class="tools">
+                <ul class="stats">
+                    <li>{% include "@WallabagCore/themes/material/Entry/_reading_time.html.twig" with {'entry': entry} only %}</li>
+</ul>
+</div>
     </div>
 </div>
